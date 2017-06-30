@@ -1,0 +1,37 @@
+'.actionBar':
+{
+	top:0,
+	height: 50,
+	backgroundColor: '#039BE5',
+	width: Titanium.UI.FILL,
+}
+'.actionBar_menu':
+{
+	width: 30,
+	height: 30,
+	left:5
+}
+'.actionBar_holder_items':
+{
+	
+	right:0,
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.FILL,
+	scrollType: 'horizontal',
+	layout:'horizontal',
+}
+".actionBar_item_wrapper":
+{
+	width: 50,
+	height: 40,
+}
+'.actionBar_item':
+{
+	width: 30,
+	height: 30,
+	top: "10", right: "10", bottom: "10", left: "10",
+}
+'.actionBar_title':{
+	color:'white',
+	font:{}
+}

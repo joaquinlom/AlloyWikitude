@@ -1,0 +1,30 @@
+<Alloy>
+	<Window class="container">
+		<View id="RA"></View>
+	    <View class="actionBar" id="actionBar">
+			<ImageView class="actionBar_menu" image="/arrow-left.png" onClick="close" id="backButton"></ImageView>
+			<Label class="actionBar_title" text="" id="title"></Label>
+			<View class="actionBar_holder_items" id="items_holder">
+				<ImageView id="cameraButton" class="actionBar_item" image="/camera_icon.png" onClick="takeSS" />
+			</View>
+		</View>
+		<OptionDialog id="dialog"  onClick="toShareImage" platform="android">
+	        <!-- Add View or AndroidView for the androidView property -->
+	        <AndroidView  layout="vertical">
+	            <ImageView id="imageToShare"></ImageView>
+	        </AndroidView>
+	        <ButtonNames>
+	            <ButtonName>Confirm</ButtonName>
+	            <ButtonName>Cancel</ButtonName>
+	        </ButtonNames>
+	    </OptionDialog>
+	    <View platform="ios" id="sharingHolder">
+	    	<Label id="titleSharing"></Label>
+	    	 <ImageView id="imageToShare" ></ImageView>
+	    	 <View id="buttonsHolder">
+	    	 	<Button id="cancelShare" systemButton="CANCEL"></Button>
+	    	 	<Button id="shareImage" systemButton="FAST_FORWARD"></Button>
+	    	 </View>
+	    	</View>
+	</Window>
+</Alloy>
